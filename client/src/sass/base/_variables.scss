@@ -1,0 +1,32 @@
+// Fonts
+$sans-serif: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+// Colors
+$off-white: #d6d6d6;
+$soft-blue: #97dff7;
+$transparent-grey: rgba(181, 181, 181, 0.8);
+$hot-pink: #ff69b4;
+$dark-grey: #757575;
+$watermelon: #ff3366;
+$highlight-color: #f6e035;
+
+// Spacing
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+$desktop-breakpoint: 45rem;
+$large-screen-breakpoint: 80rem;
+
+// Size
+$body-height: calc(100vh - 100px);
+
+// Notification Bubbles (notifications and friends)
+%notice-bubble {
+  background-color: rgba(175, 175, 175, 0.8);
+  border-radius: 25px;
+  margin: 3px auto;
+  padding: 5px;
+  text-align: center;
+  width: 80%;
+}

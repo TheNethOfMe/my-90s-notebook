@@ -1,0 +1,141 @@
+@mixin post($bgurl) {
+  align-content: flex-end;
+  background: url($bgurl);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 175px;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  width: 310px;
+  textarea {
+    margin: 4px;
+    height: 75px;
+  }
+}
+
+@mixin colorChip($color) {
+  background: $color;
+  border: 1px black solid;
+  height: 12px;
+  margin: 8px;
+  width: 12px;
+}
+
+.post__info {
+  align-content: center;
+  align-items: center;
+  background-color: $transparent-grey;
+  color: black;
+  display: flex;
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  width: 90%;
+  p {
+    text-align: center;
+  }
+}
+
+.post__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post__container-grey {
+  @include post("/images/backgrounds/grey-note.png");
+}
+
+.post__container-blue {
+  @include post("/images/backgrounds/blue-note.png");
+}
+
+.post__container-red {
+  @include post("/images/backgrounds/red-note.png");
+}
+
+.post__container-black {
+  @include post("/images/backgrounds/black-note.png");
+  color: white;
+}
+
+.post__container-white {
+  @include post("/images/backgrounds/white-note.png");
+}
+
+.post__container-purple {
+  @include post("/images/backgrounds/purple-note.png");
+}
+
+.post__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.post__date {
+  text-align: left;
+  padding: 5px;
+}
+
+.icon-button {
+  height: 35px;
+  margin-left: 4px;
+  padding: 1px;
+  width: 35px;
+  img {
+    width: 100%;
+  }
+}
+
+.post__color-select {
+  align-self: flex-end;
+  background: white;
+  bottom: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1px 0;
+  position: absolute;
+  right: 5px;
+}
+
+.post__current-color {
+  -webkit-box-shadow: -1px 0px 0px 9px rgba(245, 234, 17, 1);
+  -moz-box-shadow: -1px 0px 0px 9px rgba(245, 234, 17, 1);
+  box-shadow: -1px 0px 0px 9px rgba(245, 234, 17, 1);
+}
+
+.post__content {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+}
+
+.post__grey-chip {
+  @include colorChip(grey);
+}
+
+.post__white-chip {
+  @include colorChip(white);
+}
+
+.post__black-chip {
+  @include colorChip(black);
+}
+
+.post__red-chip {
+  @include colorChip(red);
+}
+
+.post__blue-chip {
+  @include colorChip(blue);
+}
+
+.post__purple-chip {
+  @include colorChip(purple);
+}

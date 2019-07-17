@@ -1,0 +1,14 @@
+// Set background from PrivateRoute component
+@mixin main-background($theme) {
+  background: url($theme);
+  background-position: center;
+  height: 100vh;
+  padding: 1rem;
+}
+// Set background for components nested in PrivateRoute component
+@mixin sub-background($theme) {
+  background: url($theme);
+  height: 95vh;
+  margin: 0 auto;
+  width: 70%;
+}

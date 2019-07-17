@@ -1,0 +1,21 @@
+/* FOR REFERENCE ONLY */
+
+/* MENU-COLOR */
+$splat-menu: #f8d460; /* insert color here */
+
+/* FONT */
+.splat-text {
+  font-family: "Luckiest Guy", sans-serif;
+}
+/* BACKGROUND */
+.main-background-splat {
+  @include main-background("/images/themes/splat/accent-background.png");
+}
+/* SUBBACKGROUND */
+.sub-background-splat {
+  @include sub-background("/images/themes/splat/body-background.png");
+}
+/* MENUBACKGROUND */
+.menu-background-splat {
+  background: $splat-menu;
+}

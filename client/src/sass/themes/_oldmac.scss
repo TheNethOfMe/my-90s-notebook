@@ -1,0 +1,19 @@
+/* MENU-COLOR */
+$old-mac-menu: #555; /* insert color here */
+
+/* FONT */
+.old-mac-text {
+  font-family: "Luckiest Guy", sans-serif;
+}
+/* BACKGROUND */
+.main-background-old-mac {
+  @include main-background("/images/themes/old-mac/accent-background.png");
+}
+/* SUBBACKGROUND */
+.sub-background-old-mac {
+  @include sub-background("/images/themes/old-mac/body-background.png");
+}
+/* MENUBACKGROUND */
+.menu-background-old-mac {
+  background: $old-mac-menu;
+}

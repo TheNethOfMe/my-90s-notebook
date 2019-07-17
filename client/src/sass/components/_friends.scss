@@ -1,0 +1,67 @@
+.friend__main {
+  display: flex;
+  flex-direction: row;
+}
+
+.friend__buttons {
+  width: 24%;
+}
+
+.friend__display {
+  width: 75%;
+}
+
+.friend__panel {
+  @extend %notice-bubble;
+}
+
+.friend__selector {
+  background: #333;
+  color: #eee;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3em;
+  justify-content: space-evenly;
+  margin: 4px;
+  padding: 4px;
+  &:hover {
+    background: $highlight-color;
+    color: #333;
+    cursor: pointer;
+  }
+}
+
+.friend__search-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.friend__forms {
+  width: 60%;
+  form {
+    padding: 16px;
+    .input.input__label {
+      text-align: left;
+    }
+  }
+}
+
+.friend__form-results {
+  width: 35%;
+}
+
+.friend__form-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  h4 {
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+.friend__form-picker h4.selected {
+  font-weight: bold;
+}

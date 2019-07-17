@@ -1,0 +1,19 @@
+/* MENU-COLOR */
+$frankly-lisa-menu: #009bff; /* insert color here */
+
+/* FONT */
+.frankly-lisa-text {
+  font-family: "Luckiest Guy", sans-serif;
+}
+/* BACKGROUND */
+.main-background-frankly-lisa {
+  @include main-background("/images/themes/frankly-lisa/accent-background.png");
+}
+/* SUBBACKGROUND */
+.sub-background-frankly-lisa {
+  @include sub-background("/images/themes/frankly-lisa/body-background.png");
+}
+/* MENUBACKGROUND */
+.menu-background-frankly-lisa {
+  background: $frankly-lisa-menu;
+}

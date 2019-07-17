@@ -1,0 +1,19 @@
+/* MENU-COLOR */
+$paper-cup-menu: #8729a6; /* insert color here */
+
+/* FONT */
+.paper-cup-text {
+  font-family: "Luckiest Guy", sans-serif;
+}
+/* BACKGROUND */
+.main-background-paper-cup {
+  @include main-background("/images/themes/paper-cup/accent-background.png");
+}
+/* SUBBACKGROUND */
+.sub-background-paper-cup {
+  @include sub-background("/images/themes/paper-cup/body-background.png");
+}
+/* MENUBACKGROUND */
+.menu-background-paper-cup {
+  background: $paper-cup-menu;
+}

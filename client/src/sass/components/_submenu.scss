@@ -1,0 +1,31 @@
+@mixin submenu-background-button($r, $g, $b) {
+  background: linear-gradient(rgba($r, $g, $b, 0.75), rgba($r, $g, $b, 0.75)),
+    url("/images/NewOldButton.png");
+  background-size: 100%;
+  &:hover {
+    box-shadow: 5px 5px 3px rgb($r, $g, $b);
+    cursor: pointer;
+  }
+}
+
+.submenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.submenu div {
+  margin: 12px;
+  padding: 6px;
+}
+
+.submenu__item-select {
+  color: $highlight-color;
+}
+
+.submenu__item-0 {
+  @include submenu-background-button(135, 175, 210);
+}
+
+.submenu__item-1 {
+  @include submenu-background-button(210, 143, 135);
+}

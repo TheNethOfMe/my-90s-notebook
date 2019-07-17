@@ -1,0 +1,18 @@
+/* FONT */
+.food-court-text {
+  font-family: "Luckiest Guy", sans-serif;
+}
+/* MENU-COLOR */
+$food-court-menu: #5c0103;
+/* BACKGROUND */
+.main-background-food-court {
+  @include main-background("/images/themes/food-court/accent-background.png");
+}
+/* SUBBACKGROUND */
+.sub-background-food-court {
+  @include sub-background("/images/themes/food-court/body-background.png");
+}
+/* MENUBACKGROUND */
+.menu-background-food-court {
+  background: $food-court-menu;
+}

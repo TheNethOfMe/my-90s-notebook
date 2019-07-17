@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+.DS_Store
+config/keys_dev.js
+config/default.json
+client/node_modules/
+seed.js

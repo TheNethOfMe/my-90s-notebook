@@ -1,0 +1,124 @@
+.noauth {
+  align-items: center;
+  background-image: url("/images/themes/paper-cup/accent-background.png");
+  display: flex;
+  height: $body-height;
+  -webkit-animation: 12s crossfade infinite linear;
+  -moz-animation: 12s crossfade infinite linear;
+  -o-animation: 12s crossfade infinite linear;
+  -ms-animation: 12s crossfade infinite linear;
+  animation: 12s crossfade infinite linear;
+}
+
+.noauth__notebook {
+  display: flex;
+  align-items: center;
+  background: url("/images/backgrounds/notebook-cover.jpg");
+  flex-direction: column;
+  height: $body-height;
+  justify-content: center;
+  margin: 0 auto;
+  overflow-y: auto;
+  width: 80%;
+  @media (min-width: $desktop-breakpoint) {
+    width: 60%;
+  }
+  @media (min-width: $large-screen-breakpoint) {
+    width: 45%;
+  }
+}
+
+.noauth__logo {
+  padding: $s-size;
+  width: 70%;
+}
+
+.noauth__subheading {
+  background-color: #eee;
+  font-size: $m-size;
+  font-weight: bold;
+  margin: $s-size;
+  padding: $s-size;
+  h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+// background animation
+@-webkit-keyframes crossfade {
+  0% {
+    background-image: url("/images/themes/paper-cup/accent-background.png");
+  }
+  25% {
+    background-image: url("/images/themes/frankly-lisa/accent-background.png");
+  }
+  50% {
+    background-image: url("/images/themes/tropical/accent-background.png");
+  }
+  75% {
+    background-image: url("/images/themes/food-court/accent-background.png");
+  }
+}
+
+@-moz-keyframes crossfade {
+  0% {
+    background-image: url("/images/themes/paper-cup/accent-background.png");
+  }
+  25% {
+    background-image: url("/images/themes/frankly-lisa/accent-background.png");
+  }
+  50% {
+    background-image: url("/images/themes/tropical/accent-background.png");
+  }
+  75% {
+    background-image: url("/images/themes/food-court/accent-background.png");
+  }
+}
+
+@-ms-keyframes crossfade {
+  0% {
+    background-image: url("/images/themes/paper-cup/accent-background.png");
+  }
+  25% {
+    background-image: url("/images/themes/frankly-lisa/accent-background.png");
+  }
+  50% {
+    background-image: url("/images/themes/tropical/accent-background.png");
+  }
+  75% {
+    background-image: url("/images/themes/food-court/accent-background.png");
+  }
+}
+
+@-o-keyframes crossfade {
+  0% {
+    background-image: url("/images/themes/paper-cup/accent-background.png");
+  }
+  25% {
+    background-image: url("/images/themes/frankly-lisa/accent-background.png");
+  }
+  50% {
+    background-image: url("/images/themes/tropical/accent-background.png");
+  }
+  75% {
+    background-image: url("/images/themes/food-court/accent-background.png");
+  }
+}
+
+@keyframes crossfade {
+  0% {
+    background-image: url("/images/themes/paper-cup/accent-background.png");
+  }
+  25% {
+    background-image: url("/images/themes/frankly-lisa/accent-background.png");
+  }
+  50% {
+    background-image: url("/images/themes/tropical/accent-background.png");
+  }
+  75% {
+    background-image: url("/images/themes/food-court/accent-background.png");
+  }
+}
